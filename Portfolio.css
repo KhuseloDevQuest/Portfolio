@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #111;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f4f4f4;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+/* Sections */
+
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Skills */
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Projects */
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+
+/* Mobile Menu Button */
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+
+@media (max-width: 768px) {
+
+nav {
+    flex-wrap: wrap;
+}
+
+.menu-toggle {
+    display: block;
+}
+
+.nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    background: #111;
+}
+
+.nav-links li {
+    padding: 15px 0;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+/* Skills stacking */
+
+.skills-container {
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Projects stacking */
+
+.projects-container {
+    flex-direction: column;
+}
+
+}
